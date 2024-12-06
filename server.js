@@ -9,7 +9,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://shivenpollingsystem.netlify.app",
     methods: ["GET", "POST"],
     credentials: true,
   })
@@ -18,7 +18,7 @@ app.use(
 const server = http.createServer(app);
 const io = socketIo(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "https://shivenpollingsystem.netlify.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
